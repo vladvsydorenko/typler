@@ -5,6 +5,8 @@ module.exports = {
     devtool: 'inline-source-map',
     output: {
         filename: 'typler.js',
+        library: "typler",
+        libraryTarget: "umd",
         path: path.resolve(__dirname, 'dist')
     },
     module: {
