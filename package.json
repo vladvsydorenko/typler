@@ -2,12 +2,14 @@
   "name": "typler",
   "version": "0.0.1",
   "description": "",
-  "main": "src/index.ts",
+  "main": "dist/typler.js",
   "private": true,
   "scripts": {
     "start": "webpack-dev-server --no-info --client-log-level error",
-    "test": "mocha -r ts-node/register test/test.ts"
+    "test": "mocha -r ts-node/register test/test.ts",
+    "publish": "rm -rf dist/ && webpack"
   },
+  "types": "dist/index.d.ts",
   "author": "Vlad Sydorenko",
   "license": "ISC",
   "devDependencies": {

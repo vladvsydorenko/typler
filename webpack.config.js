@@ -4,7 +4,7 @@ module.exports = {
     entry: './src/index.ts',
     devtool: 'inline-source-map',
     output: {
-        filename: 'bundle.js',
+        filename: 'typler.js',
         path: path.resolve(__dirname, 'dist')
     },
     module: {
