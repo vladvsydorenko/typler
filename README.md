@@ -1,4 +1,5 @@
 # typler
+[![Build Status](https://travis-ci.org/vladvsydorenko/typler.svg?branch=master)](https://travis-ci.org/vladvsydorenko/typler)
 
 # Syntax
 Types are represented by strings. E.g. `string`, `number`. Type could be a `container`, like `array<number>` or
