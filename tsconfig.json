@@ -8,6 +8,5 @@
     "sourceMap": true,
     "allowJs": false,
     "noImplicitAny": true
-    },
-    "exclude": ["test"]
+  }
 }

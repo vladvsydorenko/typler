@@ -4,7 +4,7 @@ module.exports = {
     entry: './src/index.ts',
     devtool: 'inline-source-map',
     output: {
-        filename: 'typler.js',
+        filename: 'main.js',
         library: "typler",
         libraryTarget: "umd",
         path: path.resolve(__dirname, 'dist')
@@ -13,8 +13,11 @@ module.exports = {
         rules: [
             {
                 test: /\.tsx?$/,
-                use: 'ts-loader',
-                exclude: /node_modules/
+                loader: 'ts-loader',
+                exclude: /node_modules/,
+                options: {
+                    configFile: "tsconfig.prod.json"
+                }
             }
         ]
     },
